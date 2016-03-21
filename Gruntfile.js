@@ -218,6 +218,7 @@ module.exports = function(grunt) {
 
   // Load plugins to provide the necessary tasks
   grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-contrib-compass');
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   grunt.registerTask('default', [
