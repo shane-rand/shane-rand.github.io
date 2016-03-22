@@ -81,7 +81,7 @@ module.exports = function(grunt) {
       },
       dev: {
         src: [  // common files
-          '<%= config.src %>/assets/js/example-1.js'
+          '<%= config.src %>/assets/js/nav.js'
         ],
         dest: '<%= config.dev %>/js/main.js'
       },
@@ -195,9 +195,9 @@ module.exports = function(grunt) {
           },
           {
             expand: true,
-            cwd: '<%= config.src %>/assets/css/vendor/',
+            cwd: '<%= config.src %>/assets/css/',
             src: 'bootstrap.min.css',
-            dest: '<%= config.dev %>/css/vendor'
+            dest: '<%= config.dev %>/css/'
           },
           {
             expand: true,

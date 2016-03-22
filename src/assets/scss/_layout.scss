@@ -1,3 +1,50 @@
+body {
+  background: #eee;
+  font-family: 'Droid Serif', serif;
+  color: #444349;
+}
+
+h1, h2 {
+  margin: 0;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+a {
+  color: #ff6000;
+  text-decoration: none;
+  &:hover {
+    color: #444349;
+    text-decoration: underline;
+  }
+}
+
+
 .main {
-  background-color: #ff0000;
+  background-color: #fff;
+
+  .content-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url('../images/Stardust.png') 0 0 repeat-x;
+    text-align: center;
+    h1 {
+      font-size: 48px;
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+
+  .content {
+    padding: 50px;
+    font-size: 18px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .main {
+    //margin-top: 100px;
+  }
 }

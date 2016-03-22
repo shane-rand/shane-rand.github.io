@@ -1,4 +1,183 @@
+/* line 1, ../../src/assets/scss/_nav.scss */
+.nav-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+/* line 6, ../../src/assets/scss/_nav.scss */
+.nav-container .img-container {
+  display: inline-block;
+  width: 150px;
+  z-index: 1;
+}
+/* line 12, ../../src/assets/scss/_nav.scss */
+.nav-container .nav-banner {
+  position: absolute;
+  top: 85px;
+  left: 135px;
+  background: #fff;
+  padding-top: 25px;
+  padding-left: 35px;
+  padding-bottom: 25px;
+  padding-right: 40px;
+  z-index: -1;
+  -webkit-box-shadow: 0px 22px 0px -16px #d4d4d4;
+  -moz-box-shadow: 0px 22px 0px -16px #d4d4d4;
+  box-shadow: 0px 22px 0px -16px #d4d4d4;
+}
+/* line 28, ../../src/assets/scss/_nav.scss */
+.nav-container .menu-label {
+  position: absolute;
+  top: 85px;
+  right: 0;
+  background: #fff;
+  padding-top: 25px;
+  padding-left: 35px;
+  padding-bottom: 25px;
+  padding-right: 40px;
+}
+/* line 38, ../../src/assets/scss/_nav.scss */
+.nav-container .menu-label:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 22px 0px -16px #d4d4d4;
+  -moz-box-shadow: 0px 22px 0px -16px #d4d4d4;
+  box-shadow: 0px 22px 0px -16px #d4d4d4;
+}
+/* line 46, ../../src/assets/scss/_nav.scss */
+.nav-container .menu {
+  position: absolute;
+  right: 0;
+  top: 210px;
+  width: 400px;
+  background: #ffffff;
+  border-top: 7px solid #444349;
+  display: none;
+  -webkit-box-shadow: 0px 22px 0px -16px #d4d4d4;
+  -moz-box-shadow: 0px 22px 0px -16px #d4d4d4;
+  box-shadow: 0px 22px 0px -16px #d4d4d4;
+}
+/* line 58, ../../src/assets/scss/_nav.scss */
+.nav-container .menu.show {
+  display: block;
+}
+/* line 62, ../../src/assets/scss/_nav.scss */
+.nav-container .menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 66, ../../src/assets/scss/_nav.scss */
+.nav-container .menu ul li {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #d4d4d4;
+}
+/* line 75, ../../src/assets/scss/_nav.scss */
+.nav-container .menu ul li i {
+  position: absolute;
+  left: 15px;
+  top: 35px;
+  display: none;
+}
+/* line 82, ../../src/assets/scss/_nav.scss */
+.nav-container .menu ul li i:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 12px solid #ff6000;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+/* line 92, ../../src/assets/scss/_nav.scss */
+.nav-container .menu ul li i:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  border-left: 6px solid #fff;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+/* line 102, ../../src/assets/scss/_nav.scss */
+.nav-container .menu ul li:hover {
+  cursor: pointer;
+}
+/* line 108, ../../src/assets/scss/_nav.scss */
+.nav-container .menu:after, .nav-container .menu:before {
+  bottom: 100%;
+  left: 85%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+/* line 119, ../../src/assets/scss/_nav.scss */
+.nav-container .menu:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #ffffff;
+  border-width: 14px;
+  margin-left: -20px;
+}
+/* line 125, ../../src/assets/scss/_nav.scss */
+.nav-container .menu:before {
+  border-color: rgba(207, 207, 207, 0);
+  border-bottom-color: #333;
+  border-width: 28px;
+  margin-left: -34px;
+}
+
 /* line 1, ../../src/assets/scss/_layout.scss */
+body {
+  background: #eee;
+  font-family: 'Droid Serif', serif;
+  color: #444349;
+}
+
+/* line 7, ../../src/assets/scss/_layout.scss */
+h1, h2 {
+  margin: 0;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* line 14, ../../src/assets/scss/_layout.scss */
+a {
+  color: #ff6000;
+  text-decoration: none;
+}
+/* line 17, ../../src/assets/scss/_layout.scss */
+a:hover {
+  color: #444349;
+  text-decoration: underline;
+}
+
+/* line 24, ../../src/assets/scss/_layout.scss */
 .main {
-  background-color: #ff0000;
+  background-color: #fff;
+}
+/* line 27, ../../src/assets/scss/_layout.scss */
+.main .content-header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: url("../images/Stardust.png") 0 0 repeat-x;
+  text-align: center;
+}
+/* line 32, ../../src/assets/scss/_layout.scss */
+.main .content-header h1 {
+  font-size: 48px;
+  text-decoration: underline;
+  color: #fff;
+}
+/* line 39, ../../src/assets/scss/_layout.scss */
+.main .content {
+  padding: 50px;
+  font-size: 18px;
 }
