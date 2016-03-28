@@ -81,7 +81,8 @@ module.exports = function(grunt) {
       },
       dev: {
         src: [  // common files
-          '<%= config.src %>/assets/js/nav.js'
+          '<%= config.src %>/assets/js/nav.js',
+          '<%= config.src %>/assets/js/content-handler.js'
         ],
         dest: '<%= config.dev %>/js/main.js'
       },

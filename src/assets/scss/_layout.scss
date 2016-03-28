@@ -37,8 +37,130 @@ a {
   }
 
   .content {
-    padding: 50px;
     font-size: 18px;
+    background: #fff;
+    margin-top: 50px;
+    position: relative;
+  }
+
+  .home-border {
+    border-top: 7px solid #4000ff;
+    display: none;
+  }
+
+  .home-border:after, .home-border:before {
+    bottom: 100%;
+    left: 12%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .home-border:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 25px;
+    margin-left: -25px;
+  }
+  .home-border:before {
+    border-color: rgba(64, 0, 255, 0);
+    border-bottom-color: #4000ff;
+    border-width: 31px;
+    margin-left: -31px;
+  }
+
+  .work-border {
+    border-top: 7px solid #CF2D56;
+    display: none;
+  }
+
+  .work-border:after, .work-border:before {
+    bottom: 100%;
+    left: 37%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .work-border:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 25px;
+    margin-left: -25px;
+  }
+  .work-border:before {
+    border-color: rgba(64, 0, 255, 0);
+    border-bottom-color: #CF2D56;
+    border-width: 31px;
+    margin-left: -31px;
+  }
+
+  .about-border {
+    border-top: 7px solid #FFEE46;
+    display: none;
+  }
+
+  .about-border:after, .about-border:before {
+    bottom: 100%;
+    left: 63%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .about-border:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 25px;
+    margin-left: -25px;
+  }
+  .about-border:before {
+    border-color: rgba(64, 0, 255, 0);
+    border-bottom-color: #FFEE46;
+    border-width: 31px;
+    margin-left: -31px;
+  }
+
+  .contact-border {
+    border-top: 7px solid #09BD56;
+    display: none;
+  }
+
+  .contact-border:after, .contact-border:before {
+    bottom: 100%;
+    left: 90%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .contact-border:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 25px;
+    margin-left: -25px;
+  }
+  .contact-border:before {
+    border-color: rgba(64, 0, 255, 0);
+    border-bottom-color: #09BD56;
+    border-width: 31px;
+    margin-left: -31px;
+  }
+
+  .copy {
+    padding: 50px;
   }
 
 }

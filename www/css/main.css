@@ -79,7 +79,7 @@
 /* line 75, ../../src/assets/scss/_nav.scss */
 .nav-container .menu ul li i {
   position: absolute;
-  left: 15px;
+  left: 0;
   top: 35px;
   display: none;
 }
@@ -178,6 +178,171 @@ a:hover {
 }
 /* line 39, ../../src/assets/scss/_layout.scss */
 .main .content {
-  padding: 50px;
   font-size: 18px;
+  background: #fff;
+  margin-top: 50px;
+  position: relative;
+}
+/* line 46, ../../src/assets/scss/_layout.scss */
+.main .home-border {
+  border-top: 7px solid #4000ff;
+  display: none;
+}
+/* line 51, ../../src/assets/scss/_layout.scss */
+.main .home-border:after, .main .home-border:before {
+  bottom: 100%;
+  left: 12%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+/* line 62, ../../src/assets/scss/_layout.scss */
+.main .home-border:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 25px;
+  margin-left: -25px;
+}
+/* line 68, ../../src/assets/scss/_layout.scss */
+.main .home-border:before {
+  border-color: rgba(64, 0, 255, 0);
+  border-bottom-color: #4000ff;
+  border-width: 31px;
+  margin-left: -31px;
+}
+/* line 75, ../../src/assets/scss/_layout.scss */
+.main .work-border {
+  border-top: 7px solid #CF2D56;
+  display: none;
+}
+/* line 80, ../../src/assets/scss/_layout.scss */
+.main .work-border:after, .main .work-border:before {
+  bottom: 100%;
+  left: 37%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+/* line 91, ../../src/assets/scss/_layout.scss */
+.main .work-border:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 25px;
+  margin-left: -25px;
+}
+/* line 97, ../../src/assets/scss/_layout.scss */
+.main .work-border:before {
+  border-color: rgba(64, 0, 255, 0);
+  border-bottom-color: #CF2D56;
+  border-width: 31px;
+  margin-left: -31px;
+}
+/* line 104, ../../src/assets/scss/_layout.scss */
+.main .about-border {
+  border-top: 7px solid #FFEE46;
+  display: none;
+}
+/* line 109, ../../src/assets/scss/_layout.scss */
+.main .about-border:after, .main .about-border:before {
+  bottom: 100%;
+  left: 63%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+/* line 120, ../../src/assets/scss/_layout.scss */
+.main .about-border:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 25px;
+  margin-left: -25px;
+}
+/* line 126, ../../src/assets/scss/_layout.scss */
+.main .about-border:before {
+  border-color: rgba(64, 0, 255, 0);
+  border-bottom-color: #FFEE46;
+  border-width: 31px;
+  margin-left: -31px;
+}
+/* line 133, ../../src/assets/scss/_layout.scss */
+.main .contact-border {
+  border-top: 7px solid #09BD56;
+  display: none;
+}
+/* line 138, ../../src/assets/scss/_layout.scss */
+.main .contact-border:after, .main .contact-border:before {
+  bottom: 100%;
+  left: 90%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+/* line 149, ../../src/assets/scss/_layout.scss */
+.main .contact-border:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 25px;
+  margin-left: -25px;
+}
+/* line 155, ../../src/assets/scss/_layout.scss */
+.main .contact-border:before {
+  border-color: rgba(64, 0, 255, 0);
+  border-bottom-color: #09BD56;
+  border-width: 31px;
+  margin-left: -31px;
+}
+/* line 162, ../../src/assets/scss/_layout.scss */
+.main .copy {
+  padding: 50px;
+}
+
+/* line 1, ../../src/assets/scss/_cover.scss */
+.square {
+  background: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+/* line 7, ../../src/assets/scss/_cover.scss */
+.square:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 22px 0px -16px #d4d4d4;
+  -moz-box-shadow: 0px 22px 0px -16px #d4d4d4;
+  box-shadow: 0px 22px 0px -16px #d4d4d4;
+}
+/* line 14, ../../src/assets/scss/_cover.scss */
+.square h1 {
+  text-align: center;
+}
+
+/* line 19, ../../src/assets/scss/_cover.scss */
+.home-bg {
+  background: #4000FF;
+}
+
+/* line 23, ../../src/assets/scss/_cover.scss */
+.work-bg {
+  background: #CF2D56;
+}
+
+/* line 27, ../../src/assets/scss/_cover.scss */
+.about-bg {
+  background: #FFEE46;
+}
+
+/* line 31, ../../src/assets/scss/_cover.scss */
+.contact-bg {
+  background: #09BD56;
 }
