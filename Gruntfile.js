@@ -40,7 +40,7 @@ module.exports = function(grunt) {
         tasks: ['compass:dev']
       },
       images: {
-        files: ['<%= config.src %>/assets/images/**/*.{png,jpg,gif}'],
+        files: ['<%= config.src %>/assets/images/**/*.{png,jpg,gif,svg}'],
         tasks: ['newer:imagemin']
       },
       scripts: {

@@ -1,0 +1,129 @@
+.spotlight {
+
+  margin-bottom: 60px;
+
+  .spotlight-img {
+    padding: 0;
+
+  }
+
+  .spotlight-copy {
+    //background: #444349;
+    height: 250px;
+    &.discover {
+      background: #FF7800;
+    }
+    &.tiaa {
+      background: #82C341;
+    }
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 28px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.about {
+
+  .link {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.discover {
+      color: #FF7800;
+      &:hover {
+        color: lighten(#FF7800, 20%);
+      }
+    }
+
+    &.sling {
+      color: #13ABDF;
+      &:hover {
+        color: lighten(#13ABDF, 20%);
+      }
+    }
+
+    &.tiaa {
+      color: #82C341;
+      &:hover {
+        color: lighten(#82C341, 20%);
+      }
+    }
+
+    &.mcd {
+      color: #D4C029;
+      &:hover {
+        color: lighten(#D4C029, 20%);
+      }
+    }
+  }
+
+  .about-copy {
+    //border-left: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+    padding: 20px;
+    font-size: 16px;
+    //background: #f7f7f7;
+  }
+
+  .about-img {
+    //padding: 0;
+  }
+}
+
+.section-header {
+  position: relative;
+  border-top: 1px solid #dbdbdb;
+  height: 40px;
+  &:after {
+    position: absolute;
+    top: -24px;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+    background: #fff;
+  }
+
+  &.spotlight-content:after {
+    content: "Portfolio Spotlight";
+    width: 270px;
+  }
+
+  &.about-content:after {
+    content: "About Me";
+    width: 150px;
+  }
+}
+
+@media(min-width: 1200px) {
+
+  .spotlight {
+    .spotlight-copy {
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      a {
+        font-size: 36px;
+      }
+    }
+  }
+
+}
