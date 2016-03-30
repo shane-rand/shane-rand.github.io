@@ -65,30 +65,82 @@
   padding-right: 35px;
   z-index: -1;
   text-align: center;
-  -webkit-box-shadow: 0px 22px 0px -16px #d4d4d4;
-  -moz-box-shadow: 0px 22px 0px -16px #d4d4d4;
-  box-shadow: 0px 22px 0px -16px #d4d4d4;
 }
 
 @media (min-width: 768px) {
-  /* line 68, ../../src/assets/scss/_nav.scss */
+  /* line 65, ../../src/assets/scss/_nav.scss */
   .nav-container-desktop {
     display: block;
   }
 
-  /* line 71, ../../src/assets/scss/_nav.scss */
+  /* line 68, ../../src/assets/scss/_nav.scss */
   .nav-container-mobile {
     display: none;
   }
 }
 /* line 1, ../../src/assets/scss/_layout.scss */
 body {
+  position: relative;
   background: #fff;
   font-family: 'Droid Serif', serif;
   color: #444349;
 }
 
-/* line 8, ../../src/assets/scss/_layout.scss */
+/* line 9, ../../src/assets/scss/_layout.scss */
+.overlay-desktop-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  /*dim the background*/
+}
+
+/* line 19, ../../src/assets/scss/_layout.scss */
+.overlay-desktop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 11;
+}
+/* line 31, ../../src/assets/scss/_layout.scss */
+.overlay-desktop .header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  background: #ff6000;
+  color: #fff;
+}
+/* line 41, ../../src/assets/scss/_layout.scss */
+.overlay-desktop .overlay-body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* line 45, ../../src/assets/scss/_layout.scss */
+.overlay-desktop .overlay-body img {
+  margin-bottom: 20px;
+}
+/* line 50, ../../src/assets/scss/_layout.scss */
+.overlay-desktop .overlay-copy {
+  font-size: 16px;
+}
+
+/* line 55, ../../src/assets/scss/_layout.scss */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* line 59, ../../src/assets/scss/_layout.scss */
 h1, h2 {
   margin: 0;
   font-family: 'Cabin', sans-serif;
@@ -96,164 +148,20 @@ h1, h2 {
   font-style: italic;
 }
 
-/* line 15, ../../src/assets/scss/_layout.scss */
+/* line 66, ../../src/assets/scss/_layout.scss */
 a {
-  color: #ff6000;
-  text-decoration: none;
-}
-/* line 18, ../../src/assets/scss/_layout.scss */
-a:hover {
   color: #444349;
   text-decoration: underline;
 }
-
-/* line 25, ../../src/assets/scss/_layout.scss */
-.main {
-  background-color: #fff;
-}
-/* line 28, ../../src/assets/scss/_layout.scss */
-.main .content-header {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background: url("../images/Stardust.png") 0 0 repeat-x;
-  text-align: center;
-}
-/* line 33, ../../src/assets/scss/_layout.scss */
-.main .content-header h1 {
-  font-size: 48px;
-  text-decoration: underline;
-  color: #fff;
-}
-/* line 40, ../../src/assets/scss/_layout.scss */
-.main .content {
-  font-size: 18px;
-  background: #fff;
-  margin-top: 50px;
-  position: relative;
-}
-/* line 47, ../../src/assets/scss/_layout.scss */
-.main .home-border {
-  border-top: 7px solid #4000ff;
-  display: none;
-}
-/* line 52, ../../src/assets/scss/_layout.scss */
-.main .home-border:after, .main .home-border:before {
-  bottom: 100%;
-  left: 12%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-/* line 63, ../../src/assets/scss/_layout.scss */
-.main .home-border:after {
-  border-color: rgba(255, 255, 255, 0);
-  border-bottom-color: #fff;
-  border-width: 25px;
-  margin-left: -25px;
-}
 /* line 69, ../../src/assets/scss/_layout.scss */
-.main .home-border:before {
-  border-color: rgba(64, 0, 255, 0);
-  border-bottom-color: #4000ff;
-  border-width: 31px;
-  margin-left: -31px;
+a:hover {
+  color: #76747e;
+  text-decoration: underline;
 }
-/* line 76, ../../src/assets/scss/_layout.scss */
-.main .work-border {
-  border-top: 7px solid #CF2D56;
-  display: none;
-}
-/* line 81, ../../src/assets/scss/_layout.scss */
-.main .work-border:after, .main .work-border:before {
-  bottom: 100%;
-  left: 37%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-/* line 92, ../../src/assets/scss/_layout.scss */
-.main .work-border:after {
-  border-color: rgba(255, 255, 255, 0);
-  border-bottom-color: #fff;
-  border-width: 25px;
-  margin-left: -25px;
-}
-/* line 98, ../../src/assets/scss/_layout.scss */
-.main .work-border:before {
-  border-color: rgba(64, 0, 255, 0);
-  border-bottom-color: #CF2D56;
-  border-width: 31px;
-  margin-left: -31px;
-}
-/* line 105, ../../src/assets/scss/_layout.scss */
-.main .about-border {
-  border-top: 7px solid #FFEE46;
-  display: none;
-}
-/* line 110, ../../src/assets/scss/_layout.scss */
-.main .about-border:after, .main .about-border:before {
-  bottom: 100%;
-  left: 63%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-/* line 121, ../../src/assets/scss/_layout.scss */
-.main .about-border:after {
-  border-color: rgba(255, 255, 255, 0);
-  border-bottom-color: #fff;
-  border-width: 25px;
-  margin-left: -25px;
-}
-/* line 127, ../../src/assets/scss/_layout.scss */
-.main .about-border:before {
-  border-color: rgba(64, 0, 255, 0);
-  border-bottom-color: #FFEE46;
-  border-width: 31px;
-  margin-left: -31px;
-}
-/* line 134, ../../src/assets/scss/_layout.scss */
-.main .contact-border {
-  border-top: 7px solid #09BD56;
-  display: none;
-}
-/* line 139, ../../src/assets/scss/_layout.scss */
-.main .contact-border:after, .main .contact-border:before {
-  bottom: 100%;
-  left: 90%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-/* line 150, ../../src/assets/scss/_layout.scss */
-.main .contact-border:after {
-  border-color: rgba(255, 255, 255, 0);
-  border-bottom-color: #fff;
-  border-width: 25px;
-  margin-left: -25px;
-}
-/* line 156, ../../src/assets/scss/_layout.scss */
-.main .contact-border:before {
-  border-color: rgba(64, 0, 255, 0);
-  border-bottom-color: #09BD56;
-  border-width: 31px;
-  margin-left: -31px;
-}
-/* line 163, ../../src/assets/scss/_layout.scss */
-.main .copy {
-  padding: 50px;
+
+/* line 75, ../../src/assets/scss/_layout.scss */
+span {
+  white-space: nowrap;
 }
 
 /* line 1, ../../src/assets/scss/_cover.scss */
@@ -301,24 +209,47 @@ a:hover {
 }
 /* line 5, ../../src/assets/scss/_carousel.scss */
 .spotlight .spotlight-img {
-  padding: 0;
+  margin-top: 20px;
 }
 /* line 10, ../../src/assets/scss/_carousel.scss */
+.spotlight .spotlight-button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+/* line 15, ../../src/assets/scss/_carousel.scss */
+.spotlight .spotlight-button {
+  padding: 10px 40px 10px 40px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  background: #444349;
+  border: none;
+  border-bottom: 5px solid #8f8e97;
+}
+/* line 27, ../../src/assets/scss/_carousel.scss */
+.spotlight .spotlight-button:hover {
+  margin-top: 5px;
+  border: none;
+}
+/* line 33, ../../src/assets/scss/_carousel.scss */
 .spotlight .spotlight-copy {
-  height: 250px;
   color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
+  text-align: center;
 }
-/* line 13, ../../src/assets/scss/_carousel.scss */
+/* line 36, ../../src/assets/scss/_carousel.scss */
 .spotlight .spotlight-copy.discover {
   background: #FF7800;
 }
-/* line 16, ../../src/assets/scss/_carousel.scss */
+/* line 39, ../../src/assets/scss/_carousel.scss */
 .spotlight .spotlight-copy.tiaa {
   background: #82C341;
 }
-/* line 25, ../../src/assets/scss/_carousel.scss */
+/* line 49, ../../src/assets/scss/_carousel.scss */
 .spotlight a {
   color: #fff;
   text-decoration: none;
@@ -328,66 +259,86 @@ a:hover {
   font-style: italic;
   font-size: 28px;
 }
-/* line 34, ../../src/assets/scss/_carousel.scss */
+/* line 58, ../../src/assets/scss/_carousel.scss */
 .spotlight a:hover {
   text-decoration: underline;
 }
 
-/* line 42, ../../src/assets/scss/_carousel.scss */
+/* line 64, ../../src/assets/scss/_carousel.scss */
+.about {
+  margin-bottom: 60px;
+}
+/* line 67, ../../src/assets/scss/_carousel.scss */
 .about .link {
   text-decoration: none;
 }
-/* line 45, ../../src/assets/scss/_carousel.scss */
+/* line 70, ../../src/assets/scss/_carousel.scss */
 .about .link:hover {
   text-decoration: underline;
 }
-/* line 49, ../../src/assets/scss/_carousel.scss */
+/* line 74, ../../src/assets/scss/_carousel.scss */
 .about .link.discover {
   color: #FF7800;
 }
-/* line 51, ../../src/assets/scss/_carousel.scss */
+/* line 76, ../../src/assets/scss/_carousel.scss */
 .about .link.discover:hover {
   color: #ffae66;
 }
-/* line 56, ../../src/assets/scss/_carousel.scss */
+/* line 81, ../../src/assets/scss/_carousel.scss */
 .about .link.sling {
   color: #13ABDF;
 }
-/* line 58, ../../src/assets/scss/_carousel.scss */
+/* line 83, ../../src/assets/scss/_carousel.scss */
 .about .link.sling:hover {
   color: #66cef2;
 }
-/* line 63, ../../src/assets/scss/_carousel.scss */
+/* line 88, ../../src/assets/scss/_carousel.scss */
 .about .link.tiaa {
   color: #82C341;
 }
-/* line 65, ../../src/assets/scss/_carousel.scss */
+/* line 90, ../../src/assets/scss/_carousel.scss */
 .about .link.tiaa:hover {
   color: #b5db8f;
 }
-/* line 70, ../../src/assets/scss/_carousel.scss */
+/* line 95, ../../src/assets/scss/_carousel.scss */
 .about .link.mcd {
   color: #D4C029;
 }
-/* line 72, ../../src/assets/scss/_carousel.scss */
+/* line 97, ../../src/assets/scss/_carousel.scss */
 .about .link.mcd:hover {
   color: #e6da7d;
 }
-/* line 78, ../../src/assets/scss/_carousel.scss */
+/* line 103, ../../src/assets/scss/_carousel.scss */
 .about .about-copy {
-  border-bottom: 1px solid #dbdbdb;
-  border-top: 1px solid #dbdbdb;
   padding: 20px;
   font-size: 16px;
 }
 
-/* line 92, ../../src/assets/scss/_carousel.scss */
+/* line 115, ../../src/assets/scss/_carousel.scss */
+.contact .contact-copy {
+  padding: 20px;
+  font-size: 16px;
+}
+/* line 121, ../../src/assets/scss/_carousel.scss */
+.contact .info-line {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+/* line 127, ../../src/assets/scss/_carousel.scss */
+.contact .info-line .info {
+  display: block;
+  white-space: normal;
+}
+
+/* line 135, ../../src/assets/scss/_carousel.scss */
 .section-header {
   position: relative;
   border-top: 1px solid #dbdbdb;
   height: 40px;
 }
-/* line 96, ../../src/assets/scss/_carousel.scss */
+/* line 139, ../../src/assets/scss/_carousel.scss */
 .section-header:after {
   position: absolute;
   top: -24px;
@@ -396,25 +347,1388 @@ a:hover {
   font-size: 30px;
   background: #fff;
 }
-/* line 105, ../../src/assets/scss/_carousel.scss */
+/* line 148, ../../src/assets/scss/_carousel.scss */
 .section-header.spotlight-content:after {
   content: "Portfolio Spotlight";
   width: 270px;
 }
-/* line 110, ../../src/assets/scss/_carousel.scss */
+/* line 153, ../../src/assets/scss/_carousel.scss */
 .section-header.about-content:after {
   content: "About Me";
   width: 150px;
 }
+/* line 158, ../../src/assets/scss/_carousel.scss */
+.section-header.contact-content:after {
+  content: "Contact";
+  width: 120px;
+}
+/* line 163, ../../src/assets/scss/_carousel.scss */
+.section-header.overlay-overview-content:after {
+  content: "Project Overview";
+  width: 260px;
+}
+/* line 168, ../../src/assets/scss/_carousel.scss */
+.section-header.overlay-details-content:after {
+  content: "Project Details";
+  width: 250px;
+}
 
 @media (min-width: 1200px) {
-  /* line 119, ../../src/assets/scss/_carousel.scss */
+  /* line 179, ../../src/assets/scss/_carousel.scss */
   .spotlight .spotlight-copy {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  /* line 123, ../../src/assets/scss/_carousel.scss */
+  /* line 183, ../../src/assets/scss/_carousel.scss */
   .spotlight .spotlight-copy a {
     font-size: 36px;
   }
+}
+@media (min-width: 992px) {
+  /* line 193, ../../src/assets/scss/_carousel.scss */
+  .spotlight .spotlight-img {
+    margin-top: 0;
+  }
+  /* line 197, ../../src/assets/scss/_carousel.scss */
+  .spotlight .spotlight-copy {
+    text-align: left;
+  }
+
+  /* line 203, ../../src/assets/scss/_carousel.scss */
+  .contact .info-line {
+    text-align: left;
+  }
+  /* line 205, ../../src/assets/scss/_carousel.scss */
+  .contact .info-line .info {
+    display: inline;
+    margin-left: 10px;
+  }
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+/* line 6, ../../src/assets/scss/_glyphs.scss */
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 17, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-asterisk:before {
+  content: "\002a";
+}
+
+/* line 20, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-plus:before {
+  content: "\002b";
+}
+
+/* line 23, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-euro:before,
+.glyphicon-eur:before {
+  content: "\20ac";
+}
+
+/* line 27, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-minus:before {
+  content: "\2212";
+}
+
+/* line 30, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-cloud:before {
+  content: "\2601";
+}
+
+/* line 33, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-envelope:before {
+  content: "\2709";
+}
+
+/* line 36, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-pencil:before {
+  content: "\270f";
+}
+
+/* line 39, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-glass:before {
+  content: "\e001";
+}
+
+/* line 42, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-music:before {
+  content: "\e002";
+}
+
+/* line 45, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-search:before {
+  content: "\e003";
+}
+
+/* line 48, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-heart:before {
+  content: "\e005";
+}
+
+/* line 51, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-star:before {
+  content: "\e006";
+}
+
+/* line 54, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-star-empty:before {
+  content: "\e007";
+}
+
+/* line 57, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-user:before {
+  content: "\e008";
+}
+
+/* line 60, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-film:before {
+  content: "\e009";
+}
+
+/* line 63, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-th-large:before {
+  content: "\e010";
+}
+
+/* line 66, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-th:before {
+  content: "\e011";
+}
+
+/* line 69, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-th-list:before {
+  content: "\e012";
+}
+
+/* line 72, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-ok:before {
+  content: "\e013";
+}
+
+/* line 75, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-remove:before {
+  content: "\e014";
+}
+
+/* line 78, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-zoom-in:before {
+  content: "\e015";
+}
+
+/* line 81, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-zoom-out:before {
+  content: "\e016";
+}
+
+/* line 84, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-off:before {
+  content: "\e017";
+}
+
+/* line 87, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-signal:before {
+  content: "\e018";
+}
+
+/* line 90, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-cog:before {
+  content: "\e019";
+}
+
+/* line 93, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-trash:before {
+  content: "\e020";
+}
+
+/* line 96, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-home:before {
+  content: "\e021";
+}
+
+/* line 99, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-file:before {
+  content: "\e022";
+}
+
+/* line 102, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-time:before {
+  content: "\e023";
+}
+
+/* line 105, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-road:before {
+  content: "\e024";
+}
+
+/* line 108, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-download-alt:before {
+  content: "\e025";
+}
+
+/* line 111, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-download:before {
+  content: "\e026";
+}
+
+/* line 114, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-upload:before {
+  content: "\e027";
+}
+
+/* line 117, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-inbox:before {
+  content: "\e028";
+}
+
+/* line 120, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-play-circle:before {
+  content: "\e029";
+}
+
+/* line 123, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-repeat:before {
+  content: "\e030";
+}
+
+/* line 126, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-refresh:before {
+  content: "\e031";
+}
+
+/* line 129, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-list-alt:before {
+  content: "\e032";
+}
+
+/* line 132, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-lock:before {
+  content: "\e033";
+}
+
+/* line 135, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-flag:before {
+  content: "\e034";
+}
+
+/* line 138, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-headphones:before {
+  content: "\e035";
+}
+
+/* line 141, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-volume-off:before {
+  content: "\e036";
+}
+
+/* line 144, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-volume-down:before {
+  content: "\e037";
+}
+
+/* line 147, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-volume-up:before {
+  content: "\e038";
+}
+
+/* line 150, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-qrcode:before {
+  content: "\e039";
+}
+
+/* line 153, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-barcode:before {
+  content: "\e040";
+}
+
+/* line 156, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-tag:before {
+  content: "\e041";
+}
+
+/* line 159, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-tags:before {
+  content: "\e042";
+}
+
+/* line 162, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-book:before {
+  content: "\e043";
+}
+
+/* line 165, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-bookmark:before {
+  content: "\e044";
+}
+
+/* line 168, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-print:before {
+  content: "\e045";
+}
+
+/* line 171, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-camera:before {
+  content: "\e046";
+}
+
+/* line 174, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-font:before {
+  content: "\e047";
+}
+
+/* line 177, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-bold:before {
+  content: "\e048";
+}
+
+/* line 180, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-italic:before {
+  content: "\e049";
+}
+
+/* line 183, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-text-height:before {
+  content: "\e050";
+}
+
+/* line 186, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-text-width:before {
+  content: "\e051";
+}
+
+/* line 189, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-align-left:before {
+  content: "\e052";
+}
+
+/* line 192, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-align-center:before {
+  content: "\e053";
+}
+
+/* line 195, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-align-right:before {
+  content: "\e054";
+}
+
+/* line 198, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-align-justify:before {
+  content: "\e055";
+}
+
+/* line 201, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-list:before {
+  content: "\e056";
+}
+
+/* line 204, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-indent-left:before {
+  content: "\e057";
+}
+
+/* line 207, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-indent-right:before {
+  content: "\e058";
+}
+
+/* line 210, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-facetime-video:before {
+  content: "\e059";
+}
+
+/* line 213, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-picture:before {
+  content: "\e060";
+}
+
+/* line 216, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-map-marker:before {
+  content: "\e062";
+}
+
+/* line 219, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-adjust:before {
+  content: "\e063";
+}
+
+/* line 222, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-tint:before {
+  content: "\e064";
+}
+
+/* line 225, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-edit:before {
+  content: "\e065";
+}
+
+/* line 228, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-share:before {
+  content: "\e066";
+}
+
+/* line 231, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-check:before {
+  content: "\e067";
+}
+
+/* line 234, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-move:before {
+  content: "\e068";
+}
+
+/* line 237, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-step-backward:before {
+  content: "\e069";
+}
+
+/* line 240, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-fast-backward:before {
+  content: "\e070";
+}
+
+/* line 243, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-backward:before {
+  content: "\e071";
+}
+
+/* line 246, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-play:before {
+  content: "\e072";
+}
+
+/* line 249, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-pause:before {
+  content: "\e073";
+}
+
+/* line 252, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-stop:before {
+  content: "\e074";
+}
+
+/* line 255, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-forward:before {
+  content: "\e075";
+}
+
+/* line 258, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-fast-forward:before {
+  content: "\e076";
+}
+
+/* line 261, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-step-forward:before {
+  content: "\e077";
+}
+
+/* line 264, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-eject:before {
+  content: "\e078";
+}
+
+/* line 267, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-chevron-left:before {
+  content: "\e079";
+}
+
+/* line 270, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-chevron-right:before {
+  content: "\e080";
+}
+
+/* line 273, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-plus-sign:before {
+  content: "\e081";
+}
+
+/* line 276, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-minus-sign:before {
+  content: "\e082";
+}
+
+/* line 279, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-remove-sign:before {
+  content: "\e083";
+}
+
+/* line 282, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-ok-sign:before {
+  content: "\e084";
+}
+
+/* line 285, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-question-sign:before {
+  content: "\e085";
+}
+
+/* line 288, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-info-sign:before {
+  content: "\e086";
+}
+
+/* line 291, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-screenshot:before {
+  content: "\e087";
+}
+
+/* line 294, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-remove-circle:before {
+  content: "\e088";
+}
+
+/* line 297, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-ok-circle:before {
+  content: "\e089";
+}
+
+/* line 300, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-ban-circle:before {
+  content: "\e090";
+}
+
+/* line 303, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-arrow-left:before {
+  content: "\e091";
+}
+
+/* line 306, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-arrow-right:before {
+  content: "\e092";
+}
+
+/* line 309, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-arrow-up:before {
+  content: "\e093";
+}
+
+/* line 312, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-arrow-down:before {
+  content: "\e094";
+}
+
+/* line 315, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-share-alt:before {
+  content: "\e095";
+}
+
+/* line 318, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-resize-full:before {
+  content: "\e096";
+}
+
+/* line 321, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-resize-small:before {
+  content: "\e097";
+}
+
+/* line 324, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-exclamation-sign:before {
+  content: "\e101";
+}
+
+/* line 327, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-gift:before {
+  content: "\e102";
+}
+
+/* line 330, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-leaf:before {
+  content: "\e103";
+}
+
+/* line 333, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-fire:before {
+  content: "\e104";
+}
+
+/* line 336, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-eye-open:before {
+  content: "\e105";
+}
+
+/* line 339, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-eye-close:before {
+  content: "\e106";
+}
+
+/* line 342, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-warning-sign:before {
+  content: "\e107";
+}
+
+/* line 345, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-plane:before {
+  content: "\e108";
+}
+
+/* line 348, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-calendar:before {
+  content: "\e109";
+}
+
+/* line 351, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-random:before {
+  content: "\e110";
+}
+
+/* line 354, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-comment:before {
+  content: "\e111";
+}
+
+/* line 357, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-magnet:before {
+  content: "\e112";
+}
+
+/* line 360, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-chevron-up:before {
+  content: "\e113";
+}
+
+/* line 363, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-chevron-down:before {
+  content: "\e114";
+}
+
+/* line 366, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-retweet:before {
+  content: "\e115";
+}
+
+/* line 369, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-shopping-cart:before {
+  content: "\e116";
+}
+
+/* line 372, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-folder-close:before {
+  content: "\e117";
+}
+
+/* line 375, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-folder-open:before {
+  content: "\e118";
+}
+
+/* line 378, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-resize-vertical:before {
+  content: "\e119";
+}
+
+/* line 381, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-resize-horizontal:before {
+  content: "\e120";
+}
+
+/* line 384, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-hdd:before {
+  content: "\e121";
+}
+
+/* line 387, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-bullhorn:before {
+  content: "\e122";
+}
+
+/* line 390, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-bell:before {
+  content: "\e123";
+}
+
+/* line 393, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-certificate:before {
+  content: "\e124";
+}
+
+/* line 396, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-thumbs-up:before {
+  content: "\e125";
+}
+
+/* line 399, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-thumbs-down:before {
+  content: "\e126";
+}
+
+/* line 402, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-hand-right:before {
+  content: "\e127";
+}
+
+/* line 405, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-hand-left:before {
+  content: "\e128";
+}
+
+/* line 408, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-hand-up:before {
+  content: "\e129";
+}
+
+/* line 411, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-hand-down:before {
+  content: "\e130";
+}
+
+/* line 414, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-circle-arrow-right:before {
+  content: "\e131";
+}
+
+/* line 417, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-circle-arrow-left:before {
+  content: "\e132";
+}
+
+/* line 420, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-circle-arrow-up:before {
+  content: "\e133";
+}
+
+/* line 423, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-circle-arrow-down:before {
+  content: "\e134";
+}
+
+/* line 426, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-globe:before {
+  content: "\e135";
+}
+
+/* line 429, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-wrench:before {
+  content: "\e136";
+}
+
+/* line 432, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-tasks:before {
+  content: "\e137";
+}
+
+/* line 435, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-filter:before {
+  content: "\e138";
+}
+
+/* line 438, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-briefcase:before {
+  content: "\e139";
+}
+
+/* line 441, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-fullscreen:before {
+  content: "\e140";
+}
+
+/* line 444, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-dashboard:before {
+  content: "\e141";
+}
+
+/* line 447, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-paperclip:before {
+  content: "\e142";
+}
+
+/* line 450, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-heart-empty:before {
+  content: "\e143";
+}
+
+/* line 453, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-link:before {
+  content: "\e144";
+}
+
+/* line 456, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-phone:before {
+  content: "\e145";
+}
+
+/* line 459, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-pushpin:before {
+  content: "\e146";
+}
+
+/* line 462, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-usd:before {
+  content: "\e148";
+}
+
+/* line 465, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-gbp:before {
+  content: "\e149";
+}
+
+/* line 468, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-sort:before {
+  content: "\e150";
+}
+
+/* line 471, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-sort-by-alphabet:before {
+  content: "\e151";
+}
+
+/* line 474, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-sort-by-alphabet-alt:before {
+  content: "\e152";
+}
+
+/* line 477, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-sort-by-order:before {
+  content: "\e153";
+}
+
+/* line 480, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-sort-by-order-alt:before {
+  content: "\e154";
+}
+
+/* line 483, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-sort-by-attributes:before {
+  content: "\e155";
+}
+
+/* line 486, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-sort-by-attributes-alt:before {
+  content: "\e156";
+}
+
+/* line 489, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-unchecked:before {
+  content: "\e157";
+}
+
+/* line 492, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-expand:before {
+  content: "\e158";
+}
+
+/* line 495, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-collapse-down:before {
+  content: "\e159";
+}
+
+/* line 498, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-collapse-up:before {
+  content: "\e160";
+}
+
+/* line 501, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-log-in:before {
+  content: "\e161";
+}
+
+/* line 504, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-flash:before {
+  content: "\e162";
+}
+
+/* line 507, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-log-out:before {
+  content: "\e163";
+}
+
+/* line 510, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-new-window:before {
+  content: "\e164";
+}
+
+/* line 513, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-record:before {
+  content: "\e165";
+}
+
+/* line 516, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-save:before {
+  content: "\e166";
+}
+
+/* line 519, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-open:before {
+  content: "\e167";
+}
+
+/* line 522, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-saved:before {
+  content: "\e168";
+}
+
+/* line 525, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-import:before {
+  content: "\e169";
+}
+
+/* line 528, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-export:before {
+  content: "\e170";
+}
+
+/* line 531, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-send:before {
+  content: "\e171";
+}
+
+/* line 534, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-floppy-disk:before {
+  content: "\e172";
+}
+
+/* line 537, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-floppy-saved:before {
+  content: "\e173";
+}
+
+/* line 540, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-floppy-remove:before {
+  content: "\e174";
+}
+
+/* line 543, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-floppy-save:before {
+  content: "\e175";
+}
+
+/* line 546, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-floppy-open:before {
+  content: "\e176";
+}
+
+/* line 549, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-credit-card:before {
+  content: "\e177";
+}
+
+/* line 552, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-transfer:before {
+  content: "\e178";
+}
+
+/* line 555, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-cutlery:before {
+  content: "\e179";
+}
+
+/* line 558, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-header:before {
+  content: "\e180";
+}
+
+/* line 561, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-compressed:before {
+  content: "\e181";
+}
+
+/* line 564, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-earphone:before {
+  content: "\e182";
+}
+
+/* line 567, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-phone-alt:before {
+  content: "\e183";
+}
+
+/* line 570, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-tower:before {
+  content: "\e184";
+}
+
+/* line 573, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-stats:before {
+  content: "\e185";
+}
+
+/* line 576, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-sd-video:before {
+  content: "\e186";
+}
+
+/* line 579, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-hd-video:before {
+  content: "\e187";
+}
+
+/* line 582, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-subtitles:before {
+  content: "\e188";
+}
+
+/* line 585, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-sound-stereo:before {
+  content: "\e189";
+}
+
+/* line 588, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-sound-dolby:before {
+  content: "\e190";
+}
+
+/* line 591, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-sound-5-1:before {
+  content: "\e191";
+}
+
+/* line 594, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-sound-6-1:before {
+  content: "\e192";
+}
+
+/* line 597, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-sound-7-1:before {
+  content: "\e193";
+}
+
+/* line 600, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-copyright-mark:before {
+  content: "\e194";
+}
+
+/* line 603, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-registration-mark:before {
+  content: "\e195";
+}
+
+/* line 606, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-cloud-download:before {
+  content: "\e197";
+}
+
+/* line 609, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-cloud-upload:before {
+  content: "\e198";
+}
+
+/* line 612, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-tree-conifer:before {
+  content: "\e199";
+}
+
+/* line 615, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-tree-deciduous:before {
+  content: "\e200";
+}
+
+/* line 618, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-cd:before {
+  content: "\e201";
+}
+
+/* line 621, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-save-file:before {
+  content: "\e202";
+}
+
+/* line 624, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-open-file:before {
+  content: "\e203";
+}
+
+/* line 627, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-level-up:before {
+  content: "\e204";
+}
+
+/* line 630, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-copy:before {
+  content: "\e205";
+}
+
+/* line 633, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-paste:before {
+  content: "\e206";
+}
+
+/* line 636, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-alert:before {
+  content: "\e209";
+}
+
+/* line 639, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-equalizer:before {
+  content: "\e210";
+}
+
+/* line 642, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-king:before {
+  content: "\e211";
+}
+
+/* line 645, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-queen:before {
+  content: "\e212";
+}
+
+/* line 648, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-pawn:before {
+  content: "\e213";
+}
+
+/* line 651, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-bishop:before {
+  content: "\e214";
+}
+
+/* line 654, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-knight:before {
+  content: "\e215";
+}
+
+/* line 657, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-baby-formula:before {
+  content: "\e216";
+}
+
+/* line 660, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-tent:before {
+  content: "\26fa";
+}
+
+/* line 663, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-blackboard:before {
+  content: "\e218";
+}
+
+/* line 666, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-bed:before {
+  content: "\e219";
+}
+
+/* line 669, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-apple:before {
+  content: "\f8ff";
+}
+
+/* line 672, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-erase:before {
+  content: "\e221";
+}
+
+/* line 675, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-hourglass:before {
+  content: "\231b";
+}
+
+/* line 678, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-lamp:before {
+  content: "\e223";
+}
+
+/* line 681, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-duplicate:before {
+  content: "\e224";
+}
+
+/* line 684, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-piggy-bank:before {
+  content: "\e225";
+}
+
+/* line 687, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-scissors:before {
+  content: "\e226";
+}
+
+/* line 690, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-bitcoin:before {
+  content: "\e227";
+}
+
+/* line 693, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-btc:before {
+  content: "\e227";
+}
+
+/* line 696, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-xbt:before {
+  content: "\e227";
+}
+
+/* line 699, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-yen:before {
+  content: "\00a5";
+}
+
+/* line 702, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-jpy:before {
+  content: "\00a5";
+}
+
+/* line 705, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-ruble:before {
+  content: "\20bd";
+}
+
+/* line 708, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-rub:before {
+  content: "\20bd";
+}
+
+/* line 711, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-scale:before {
+  content: "\e230";
+}
+
+/* line 714, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-ice-lolly:before {
+  content: "\e231";
+}
+
+/* line 717, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-ice-lolly-tasted:before {
+  content: "\e232";
+}
+
+/* line 720, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-education:before {
+  content: "\e233";
+}
+
+/* line 723, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-option-horizontal:before {
+  content: "\e234";
+}
+
+/* line 726, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-option-vertical:before {
+  content: "\e235";
+}
+
+/* line 729, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-menu-hamburger:before {
+  content: "\e236";
+}
+
+/* line 732, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-modal-window:before {
+  content: "\e237";
+}
+
+/* line 735, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-oil:before {
+  content: "\e238";
+}
+
+/* line 738, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-grain:before {
+  content: "\e239";
+}
+
+/* line 741, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-sunglasses:before {
+  content: "\e240";
+}
+
+/* line 744, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-text-size:before {
+  content: "\e241";
+}
+
+/* line 747, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-text-color:before {
+  content: "\e242";
+}
+
+/* line 750, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-text-background:before {
+  content: "\e243";
+}
+
+/* line 753, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-object-align-top:before {
+  content: "\e244";
+}
+
+/* line 756, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-object-align-bottom:before {
+  content: "\e245";
+}
+
+/* line 759, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-object-align-horizontal:before {
+  content: "\e246";
+}
+
+/* line 762, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-object-align-left:before {
+  content: "\e247";
+}
+
+/* line 765, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-object-align-vertical:before {
+  content: "\e248";
+}
+
+/* line 768, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-object-align-right:before {
+  content: "\e249";
+}
+
+/* line 771, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-triangle-right:before {
+  content: "\e250";
+}
+
+/* line 774, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-triangle-left:before {
+  content: "\e251";
+}
+
+/* line 777, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-triangle-bottom:before {
+  content: "\e252";
+}
+
+/* line 780, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-triangle-top:before {
+  content: "\e253";
+}
+
+/* line 783, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-console:before {
+  content: "\e254";
+}
+
+/* line 786, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-superscript:before {
+  content: "\e255";
+}
+
+/* line 789, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-subscript:before {
+  content: "\e256";
+}
+
+/* line 792, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-menu-left:before {
+  content: "\e257";
+}
+
+/* line 795, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-menu-right:before {
+  content: "\e258";
+}
+
+/* line 798, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-menu-down:before {
+  content: "\e259";
+}
+
+/* line 801, ../../src/assets/scss/_glyphs.scss */
+.glyphicon-menu-up:before {
+  content: "\e260";
 }

@@ -1,8 +1,59 @@
 body {
   //background: #eee;
+  position: relative;
   background: #fff;
   font-family: 'Droid Serif', serif;
   color: #444349;
+}
+
+.overlay-desktop-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+
+.overlay-desktop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 11;
+
+  .header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    background: #ff6000;
+    color: #fff;
+  }
+
+  .overlay-body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    img {
+      margin-bottom: 20px;
+    }
+  }
+
+  .overlay-copy {
+    font-size: 16px;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 h1, h2 {
@@ -13,161 +64,14 @@ h1, h2 {
 }
 
 a {
-  color: #ff6000;
-  text-decoration: none;
+  color: #444349;
+  text-decoration: underline;
   &:hover {
-    color: #444349;
+    color: lighten(#444349, 20%);
     text-decoration: underline;
   }
 }
 
-
-.main {
-  background-color: #fff;
-
-  .content-header {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: url('../images/Stardust.png') 0 0 repeat-x;
-    text-align: center;
-    h1 {
-      font-size: 48px;
-      text-decoration: underline;
-      color: #fff;
-    }
-  }
-
-  .content {
-    font-size: 18px;
-    background: #fff;
-    margin-top: 50px;
-    position: relative;
-  }
-
-  .home-border {
-    border-top: 7px solid #4000ff;
-    display: none;
-  }
-
-  .home-border:after, .home-border:before {
-    bottom: 100%;
-    left: 12%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-  }
-
-  .home-border:after {
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #fff;
-    border-width: 25px;
-    margin-left: -25px;
-  }
-  .home-border:before {
-    border-color: rgba(64, 0, 255, 0);
-    border-bottom-color: #4000ff;
-    border-width: 31px;
-    margin-left: -31px;
-  }
-
-  .work-border {
-    border-top: 7px solid #CF2D56;
-    display: none;
-  }
-
-  .work-border:after, .work-border:before {
-    bottom: 100%;
-    left: 37%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-  }
-
-  .work-border:after {
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #fff;
-    border-width: 25px;
-    margin-left: -25px;
-  }
-  .work-border:before {
-    border-color: rgba(64, 0, 255, 0);
-    border-bottom-color: #CF2D56;
-    border-width: 31px;
-    margin-left: -31px;
-  }
-
-  .about-border {
-    border-top: 7px solid #FFEE46;
-    display: none;
-  }
-
-  .about-border:after, .about-border:before {
-    bottom: 100%;
-    left: 63%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-  }
-
-  .about-border:after {
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #fff;
-    border-width: 25px;
-    margin-left: -25px;
-  }
-  .about-border:before {
-    border-color: rgba(64, 0, 255, 0);
-    border-bottom-color: #FFEE46;
-    border-width: 31px;
-    margin-left: -31px;
-  }
-
-  .contact-border {
-    border-top: 7px solid #09BD56;
-    display: none;
-  }
-
-  .contact-border:after, .contact-border:before {
-    bottom: 100%;
-    left: 90%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-  }
-
-  .contact-border:after {
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #fff;
-    border-width: 25px;
-    margin-left: -25px;
-  }
-  .contact-border:before {
-    border-color: rgba(64, 0, 255, 0);
-    border-bottom-color: #09BD56;
-    border-width: 31px;
-    margin-left: -31px;
-  }
-
-  .copy {
-    padding: 50px;
-  }
-
-}
-
-@media (min-width: 768px) {
-  .main {
-    //margin-top: 100px;
-  }
+span {
+  white-space: nowrap;
 }

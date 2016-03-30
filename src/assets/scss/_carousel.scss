@@ -3,13 +3,36 @@
   margin-bottom: 60px;
 
   .spotlight-img {
-    padding: 0;
+    margin-top: 20px;
 
+  }
+
+  .spotlight-button-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .spotlight-button {
+    padding: 10px 40px 10px 40px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    background: #444349;
+    border: none;
+    border-bottom: 5px solid lighten(#444349, 30%);
+
+    &:hover {
+      margin-top: 5px;
+      border: none;
+    }
   }
 
   .spotlight-copy {
     //background: #444349;
-    height: 250px;
+    //height: 250px;
     &.discover {
       background: #FF7800;
     }
@@ -19,6 +42,7 @@
     color: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: center;
 
   }
 
@@ -38,6 +62,7 @@
 }
 
 .about {
+  margin-bottom: 60px;
 
   .link {
     text-decoration: none;
@@ -76,9 +101,6 @@
   }
 
   .about-copy {
-    //border-left: 1px solid #dbdbdb;
-    border-bottom: 1px solid #dbdbdb;
-    border-top: 1px solid #dbdbdb;
     padding: 20px;
     font-size: 16px;
     //background: #f7f7f7;
@@ -87,6 +109,27 @@
   .about-img {
     //padding: 0;
   }
+}
+
+.contact {
+  .contact-copy {
+    padding: 20px;
+    font-size: 16px;
+    //background: #f7f7f7;
+  }
+
+  .info-line {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+    .info {
+      display: block;
+      white-space: normal;
+    }
+  }
+
 }
 
 .section-header {
@@ -111,6 +154,23 @@
     content: "About Me";
     width: 150px;
   }
+
+  &.contact-content:after {
+    content: "Contact";
+    width: 120px;
+  }
+
+  &.overlay-overview-content:after {
+    content: "Project Overview";
+    width: 260px;
+  }
+
+  &.overlay-details-content:after {
+    content: "Project Details";
+    width: 250px;
+  }
+
+
 }
 
 @media(min-width: 1200px) {
@@ -126,4 +186,26 @@
     }
   }
 
+}
+
+@media(min-width: 992px) {
+  .spotlight {
+    .spotlight-img {
+      margin-top: 0;
+    }
+
+    .spotlight-copy {
+      text-align: left;
+    }
+  }
+
+  .contact {
+    .info-line {
+      text-align: left;
+      .info {
+        display: inline;
+        margin-left: 10px;
+      }
+    }
+  }
 }

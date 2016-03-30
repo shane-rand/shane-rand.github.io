@@ -11,19 +11,22 @@ layout: default.hbs
       </div>
       <div class="col-md-6 col-sm-12 spotlight-copy discover">
         <div class="col-md-6 col-sm-12">
-          <a href="#">Discover It Credit Card Redesign &rarr;</a>
+          <a href="#">Discover It Credit Card <span>Redesign &rarr;</span></a>
         </div>
-        <div class="col-md-6 col-sm-12">
+        <div class="col-md-6 col-sm-12 spotlight-img">
           <img src="images/Discover-it-cash-credit-card-blue.png" class="img-responsive center-block"/>
         </div>
       </div>
       <div class="col-md-6 col-sm-12 spotlight-copy tiaa">
         <div class="col-md-7 col-sm-12">
-          <a href="#">TIAA Charitable Quarterly Email Blast &rarr;</a>
+          <a href="#">TIAA Charitable Quarterly Email <span>Blast &rarr;</span></a>
         </div>
-        <div class="col-md-5 col-sm-12">
+        <div class="col-md-5 col-sm-12 spotlight-img">
           <img src="images/charitable_logo_pos_rgb.png" class="img-responsive center-block"/>
         </div>
+      </div>
+      <div class="col-md-12 spotlight-button-container">
+        <button class="spotlight-button">More</button>
       </div>
     </div>
 
@@ -31,16 +34,32 @@ layout: default.hbs
       <div class="section-header about-content">
       </div>
       <div class="col-md-6 col-sm-12 about-copy">
-        <p>Howdy! My name is Shane. Welcome to my site. I am a graduate of the Rochester Institute of Technology with a Bachelors of Science in Information Technology (yup that's a mouthful isn't it?). </p>
+        <p>Howdy! My name is Shane. Welcome to my site. I am a graduate of the Rochester Institute of Technology with a Bachelors of Science in Information Technology (yup that's a mouthful isn't it?). My primary focus is in Web Technologies with languages like HTML, SASS, JS + JQuery, PHP, and a host of frameworks. I am also proficient with Grunt and handlebars. I use GIT for code management and JIRA for issue tracking. I am always open to learning new languages and frameworks.</p>
         <p> Over the past year I have been working with <a href="#" class="link mcd">MCD Partners</a> as an Associate Web Developer. I have worked on numerous projects for our biggest client, <a href="#" class="link discover">Discover</a>, as well as other agency projects with clients like <a href="#" class="link sling">Sling TV</a> and <a href="#" class="link tiaa">TIAA-Charitable</a>. Currently, I am seeking a new position to further my career in web development.</p>
         <p>I was born, raised, and currently live in Fairport, NY. I love to play Soccer, Hockey, Basketball, and just about any other sport you can imagine. I also enjoy fishing, kayaking, and exploring. I am an avid (read: absolute maniac) fan of the Buffalo Bills and Buffalo Sabres.</p>
-        <p>I also am a photography hobbyist. Check out my gallery here.</p>
       </div>
       <div class="col-md-6 about-img">
         <img src="images/adirondacks.jpg" class="img-responsive"/>
       </div>
     </div>
 
-
-
+     <div class="col-md-12 col-sm-12 contact">
+      <div class="section-header contact-content">
+      </div>
+      <div class="col-md-6 col-sm-12 contact-copy">
+        <div class="info-line">
+          <span class="glyphicon glyphicon-home"></span><span class="info">21 Clinton Place, Fairport NY 14450</span>
+        </div>
+        <div class="info-line">
+          <span class="glyphicon glyphicon-phone"></span><span class="info">(585) 200-6488</span>
+        </div>
+        <div class="info-line">
+          <span class="glyphicon glyphicon-envelope"></span><span class="info">srand3@gmail.com</span>
+        </div>
+        <div class="info-line">
+          <span class="info"><a href="pdf/Shane-Rand-Resume.pdf" download>Download my Resume here</a></span>
+        </div>
+      </div>
+    </div>
 </div>
+{{>overlay}}
