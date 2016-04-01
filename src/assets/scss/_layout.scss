@@ -7,6 +7,7 @@ body {
 }
 
 .overlay-desktop-bg {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -17,7 +18,8 @@ body {
 }
 
 .overlay-desktop {
-  position: absolute;
+  display: none;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -27,6 +29,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   z-index: 11;
+  overflow-y: scroll;
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+  }
 
   .header {
     padding-top: 40px;
@@ -34,7 +44,14 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
-    background: #ff6000;
+
+    &.discover {
+      background: #FF7800;
+    }
+
+    &.tiaa {
+      background: #82C341;
+    }
     color: #fff;
   }
 
@@ -49,6 +66,12 @@ body {
 
   .overlay-copy {
     font-size: 16px;
+  }
+}
+
+@media(max-width: 992px) {
+  .overlay-desktop {
+    width: 100%;
   }
 }
 

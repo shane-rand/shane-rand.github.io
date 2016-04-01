@@ -14,19 +14,20 @@
 
   .spotlight-button {
     padding: 10px 40px 10px 40px;
-    border-radius: 5px;
-    color: #fff;
+    border-radius: 4px;
+    color: #444349;
     font-size: 24px;
     font-family: 'Cabin', sans-serif;
     font-weight: 700;
     font-style: italic;
-    background: #444349;
-    border: none;
-    border-bottom: 5px solid lighten(#444349, 30%);
+    background: #fff;
+    border: 2px solid #444349;
+    -webkit-transition: background .5s; /* Safari */
+    transition: background .5s;
 
     &:hover {
-      margin-top: 5px;
-      border: none;
+      background: #444349;
+      color: #fff;
     }
   }
 
@@ -167,7 +168,7 @@
 
   &.overlay-details-content:after {
     content: "Project Details";
-    width: 250px;
+    width: 215px;
   }
 
 
