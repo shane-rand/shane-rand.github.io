@@ -9,10 +9,8 @@
      portfolioLinks.each(function(){
       $(this).on('click',function(){
         var project = $(this).attr('data-overlay');
-        console.log(project);
         var overlay = $(".overlay-desktop[data-overlay='"+project+"']");
         var overlayCloseButton = overlay.find($('.close-overlay'));
-        console.log(overlayCloseButton);
         overlayBG.fadeIn(200);
         overlay.fadeIn(200);
         $('body').addClass('no-scroll');

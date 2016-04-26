@@ -83,6 +83,7 @@ module.exports = function(grunt) {
         src: [  // common files
           '<%= config.src %>/assets/js/nav.js',
           '<%= config.src %>/assets/js/content-handler.js',
+          '<%= config.src %>/assets/js/portfolio-handler.js',
           '<%= config.src %>/assets/js/overlay.js'
         ],
         dest: '<%= config.dev %>/js/main.js'

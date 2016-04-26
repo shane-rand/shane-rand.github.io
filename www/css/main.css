@@ -15,7 +15,7 @@
 .nav-container-desktop .nav-banner {
   position: absolute;
   top: 85px;
-  left: 135px;
+  left: 130px;
   background: #fff;
   padding-top: 25px;
   padding-left: 35px;
@@ -138,32 +138,36 @@ body {
 .overlay-desktop .header.tiaa {
   background: #82C341;
 }
-/* line 58, ../../src/assets/scss/_layout.scss */
+/* line 55, ../../src/assets/scss/_layout.scss */
+.overlay-desktop .header.js-plugins {
+  background: #5BBCD0;
+}
+/* line 61, ../../src/assets/scss/_layout.scss */
 .overlay-desktop .overlay-body {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 62, ../../src/assets/scss/_layout.scss */
+/* line 65, ../../src/assets/scss/_layout.scss */
 .overlay-desktop .overlay-body img {
   margin-bottom: 20px;
 }
-/* line 67, ../../src/assets/scss/_layout.scss */
+/* line 70, ../../src/assets/scss/_layout.scss */
 .overlay-desktop .overlay-copy {
   font-size: 16px;
 }
 
 @media (max-width: 992px) {
-  /* line 73, ../../src/assets/scss/_layout.scss */
+  /* line 76, ../../src/assets/scss/_layout.scss */
   .overlay-desktop {
     width: 100%;
   }
 }
-/* line 78, ../../src/assets/scss/_layout.scss */
+/* line 81, ../../src/assets/scss/_layout.scss */
 .no-scroll {
   overflow: hidden;
 }
 
-/* line 82, ../../src/assets/scss/_layout.scss */
+/* line 85, ../../src/assets/scss/_layout.scss */
 h1, h2 {
   margin: 0;
   font-family: 'Cabin', sans-serif;
@@ -171,18 +175,18 @@ h1, h2 {
   font-style: italic;
 }
 
-/* line 89, ../../src/assets/scss/_layout.scss */
+/* line 92, ../../src/assets/scss/_layout.scss */
 a {
   color: #444349;
   text-decoration: underline;
 }
-/* line 92, ../../src/assets/scss/_layout.scss */
+/* line 95, ../../src/assets/scss/_layout.scss */
 a:hover {
   color: #76747e;
   text-decoration: underline;
 }
 
-/* line 98, ../../src/assets/scss/_layout.scss */
+/* line 101, ../../src/assets/scss/_layout.scss */
 span {
   white-space: nowrap;
 }
@@ -274,7 +278,11 @@ span {
 .spotlight .spotlight-copy.tiaa {
   background: #82C341;
 }
-/* line 50, ../../src/assets/scss/_carousel.scss */
+/* line 43, ../../src/assets/scss/_carousel.scss */
+.spotlight .spotlight-copy.js-plugins {
+  background: #5BBCD0;
+}
+/* line 53, ../../src/assets/scss/_carousel.scss */
 .spotlight a {
   color: #fff;
   text-decoration: none;
@@ -284,86 +292,86 @@ span {
   font-style: italic;
   font-size: 28px;
 }
-/* line 59, ../../src/assets/scss/_carousel.scss */
+/* line 62, ../../src/assets/scss/_carousel.scss */
 .spotlight a:hover {
   text-decoration: underline;
 }
 
-/* line 65, ../../src/assets/scss/_carousel.scss */
+/* line 68, ../../src/assets/scss/_carousel.scss */
 .about {
   margin-bottom: 60px;
 }
-/* line 68, ../../src/assets/scss/_carousel.scss */
+/* line 71, ../../src/assets/scss/_carousel.scss */
 .about .link {
   text-decoration: none;
 }
-/* line 71, ../../src/assets/scss/_carousel.scss */
+/* line 74, ../../src/assets/scss/_carousel.scss */
 .about .link:hover {
   text-decoration: underline;
 }
-/* line 75, ../../src/assets/scss/_carousel.scss */
+/* line 78, ../../src/assets/scss/_carousel.scss */
 .about .link.discover {
   color: #FF7800;
 }
-/* line 77, ../../src/assets/scss/_carousel.scss */
+/* line 80, ../../src/assets/scss/_carousel.scss */
 .about .link.discover:hover {
   color: #ffae66;
 }
-/* line 82, ../../src/assets/scss/_carousel.scss */
+/* line 85, ../../src/assets/scss/_carousel.scss */
 .about .link.sling {
   color: #13ABDF;
 }
-/* line 84, ../../src/assets/scss/_carousel.scss */
+/* line 87, ../../src/assets/scss/_carousel.scss */
 .about .link.sling:hover {
   color: #66cef2;
 }
-/* line 89, ../../src/assets/scss/_carousel.scss */
+/* line 92, ../../src/assets/scss/_carousel.scss */
 .about .link.tiaa {
   color: #82C341;
 }
-/* line 91, ../../src/assets/scss/_carousel.scss */
+/* line 94, ../../src/assets/scss/_carousel.scss */
 .about .link.tiaa:hover {
   color: #b5db8f;
 }
-/* line 96, ../../src/assets/scss/_carousel.scss */
+/* line 99, ../../src/assets/scss/_carousel.scss */
 .about .link.mcd {
   color: #D4C029;
 }
-/* line 98, ../../src/assets/scss/_carousel.scss */
+/* line 101, ../../src/assets/scss/_carousel.scss */
 .about .link.mcd:hover {
   color: #e6da7d;
 }
-/* line 104, ../../src/assets/scss/_carousel.scss */
+/* line 107, ../../src/assets/scss/_carousel.scss */
 .about .about-copy {
   padding: 20px;
   font-size: 16px;
 }
 
-/* line 116, ../../src/assets/scss/_carousel.scss */
+/* line 119, ../../src/assets/scss/_carousel.scss */
 .contact .contact-copy {
   padding: 20px;
   font-size: 16px;
 }
-/* line 122, ../../src/assets/scss/_carousel.scss */
+/* line 125, ../../src/assets/scss/_carousel.scss */
 .contact .info-line {
   font-size: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
 }
-/* line 128, ../../src/assets/scss/_carousel.scss */
+/* line 131, ../../src/assets/scss/_carousel.scss */
 .contact .info-line .info {
   display: block;
   white-space: normal;
 }
 
-/* line 136, ../../src/assets/scss/_carousel.scss */
+/* line 139, ../../src/assets/scss/_carousel.scss */
 .section-header {
   position: relative;
   border-top: 1px solid #dbdbdb;
   height: 40px;
 }
-/* line 140, ../../src/assets/scss/_carousel.scss */
+/* line 143, ../../src/assets/scss/_carousel.scss */
 .section-header:after {
   position: absolute;
   top: -24px;
@@ -372,58 +380,58 @@ span {
   font-size: 30px;
   background: #fff;
 }
-/* line 149, ../../src/assets/scss/_carousel.scss */
+/* line 152, ../../src/assets/scss/_carousel.scss */
 .section-header.spotlight-content:after {
   content: "Portfolio Spotlight";
   width: 270px;
 }
-/* line 154, ../../src/assets/scss/_carousel.scss */
+/* line 157, ../../src/assets/scss/_carousel.scss */
 .section-header.about-content:after {
   content: "About Me";
   width: 150px;
 }
-/* line 159, ../../src/assets/scss/_carousel.scss */
+/* line 162, ../../src/assets/scss/_carousel.scss */
 .section-header.contact-content:after {
   content: "Contact";
   width: 120px;
 }
-/* line 164, ../../src/assets/scss/_carousel.scss */
+/* line 167, ../../src/assets/scss/_carousel.scss */
 .section-header.overlay-overview-content:after {
   content: "Project Overview";
   width: 260px;
 }
-/* line 169, ../../src/assets/scss/_carousel.scss */
+/* line 172, ../../src/assets/scss/_carousel.scss */
 .section-header.overlay-details-content:after {
   content: "Project Details";
   width: 215px;
 }
 
 @media (min-width: 1200px) {
-  /* line 180, ../../src/assets/scss/_carousel.scss */
+  /* line 183, ../../src/assets/scss/_carousel.scss */
   .spotlight .spotlight-copy {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  /* line 184, ../../src/assets/scss/_carousel.scss */
+  /* line 187, ../../src/assets/scss/_carousel.scss */
   .spotlight .spotlight-copy a {
     font-size: 36px;
   }
 }
 @media (min-width: 992px) {
-  /* line 194, ../../src/assets/scss/_carousel.scss */
+  /* line 197, ../../src/assets/scss/_carousel.scss */
   .spotlight .spotlight-img {
     margin-top: 0;
   }
-  /* line 198, ../../src/assets/scss/_carousel.scss */
+  /* line 201, ../../src/assets/scss/_carousel.scss */
   .spotlight .spotlight-copy {
     text-align: left;
   }
 
-  /* line 204, ../../src/assets/scss/_carousel.scss */
+  /* line 207, ../../src/assets/scss/_carousel.scss */
   .contact .info-line {
     text-align: left;
   }
-  /* line 206, ../../src/assets/scss/_carousel.scss */
+  /* line 209, ../../src/assets/scss/_carousel.scss */
   .contact .info-line .info {
     display: inline;
     margin-left: 10px;
